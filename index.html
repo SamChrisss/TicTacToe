@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .halo {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 5%;
+            font-weight: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="halo" id="welcome-message"></div>
+    <section>
+        <h1 class="game--title">Tic-Tac-Toe</h1>
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h2 class="game--status"></h2>
+
+        <button class="start-player" data-player="user">User Starts</button>
+        <button class="start-player" data-player="computer">Computer Starts</button> <br>
+        <button class="game--restart">Restart Game</button>
+    </section>
+
+    <audio id="click-sound" src="sounds/buttonClick.mp3"></audio>
+    <audio id="move-sound" src="sounds/move.mp3"></audio>
+    <audio id="back-sound" src="sounds/bgsound.mp3" loop autoplay></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
